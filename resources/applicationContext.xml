@@ -8,11 +8,11 @@ http://www.springframework.org/schema/context
 http://www.springframework.org/schema/context/spring-context.xsd">
 
     <bean id="myPet"
-           class = "com.example.spring_project.yergazy.spring.Cat">
+           class = "com.example.spring_project.yergazy.spring.Dog">
     </bean>
 
     <bean id="myPerson"
           class="com.example.spring_project.yergazy.spring.Person">
-          <constructor-arg ref="myPet" />
+          <property name="pet" ref="myPet"/>
     </bean>
 </beans>
