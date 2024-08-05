@@ -13,12 +13,15 @@ public class Dog implements Pet {
         System.out.println("Bow-Wow");
     }
 
-    public String getName() {
-        return name;
+    //модификаторы доступа могут быть любые
+    // методы должны быть без параметров
+    public void init() {
+        System.out.println("Class Dog: init method");
     }
 
-    public void setName(String name) {
-        this.name = name;
+    //модификаторы доступа могут быть любые
+    public void destroy() {
+        System.out.println("Class Dog: destroy method");
     }
 
 }
